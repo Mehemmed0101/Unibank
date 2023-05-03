@@ -1,0 +1,329 @@
+h1{
+    color: #ff6400;
+    font-size: 25px;
+    font-weight: bold;
+    margin: 10px 0px 25px;
+}
+.padd{
+    padding-left: 100px;
+}
+.filters{
+    width: auto;
+    margin: 10px 0 15px;
+    height: auto;
+
+
+    .active{
+        border: 2px solid #FF6400;
+        color: #FF6400 !important;
+        position: relative;
+
+        &::after{
+            content: "";
+            position: absolute;
+            width: 25px;
+            height: 25px;
+            background-color: #FFFFFF;
+            bottom: -23px;
+            background-image: url('../images/down_arrow.png');
+            background-size: contain;
+            background-repeat: no-repeat;
+            left: 42%;
+        }
+    }
+
+
+    a{
+        height: 49px;
+        border-radius: 25px;
+        margin: 10px 5px 20px;
+        padding: 16px 40px;
+        border: 2px solid #969696;
+        text-decoration: none;
+        color: #A1A1A1;
+        font-weight: bold;
+        font-size: 14px;
+        cursor: pointer;
+        
+        &:hover{
+            color: #A1A1A1;
+        }
+
+    }
+
+
+}
+
+.loc{
+    width: 95%;
+    display: flex;
+    justify-content: space-between;
+    padding: 35px 65px;
+    border-radius: 10px;
+    color: #000000;
+    background-color: #FAFAFA;
+    transition: 0.3s;
+    margin-bottom: 20px;
+
+    margin-left: 60px;
+
+    &:hover{
+        background-color: #FF6400;
+
+        .loc_name{
+            p{
+                color: white;
+            }
+    
+            .text{
+                color: white;
+            }
+        }
+        .loc_hour{
+
+            margin-left: 20px;
+            color: white;
+    
+            display: flex;
+            span{
+                i{
+                    font-size: 35px;
+                    margin-right: 5px;
+                    margin-top: 5px;
+                    color: white;
+                }
+            }
+        }
+    
+        .loc_other{
+            margin-left: 20px;
+            color: white;
+    
+            display: flex;
+            span{
+                
+                i{
+                    font-size: 35px;
+                    margin-right: 5px;
+                    margin-top: 5px;
+                    color: #ff6400;
+                    color: white;
+                }
+            }
+        }
+    }
+
+    .loc_name{
+        p{
+            font-size: 20px;
+            font-weight: 700;
+            margin: 0px;
+        }
+
+        .text{
+            font-size: 14px;
+        }
+    }
+
+    .loc_hour{
+
+        margin-left: 20px;
+
+        display: flex;
+        span{
+            i{
+                font-size: 35px;
+                margin-right: 5px;
+                margin-top: 5px;
+                color: #ff6400;
+            }
+        }
+    }
+
+    .loc_other{
+        margin-left: 20px;
+
+        display: flex;
+        span{
+            
+            i{
+                font-size: 35px;
+                margin-right: 5px;
+                margin-top: 5px;
+                color: #ff6400;
+            }
+        }
+    }
+}
+
+.info{
+    height: 65px;
+    padding: 25px 65px;
+    background-color: #FF6400;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+
+    margin-left: 60px;
+    p{
+        display: inline;
+        font-size: 14px;
+        color: white;
+        font-weight: 700;
+
+    }
+
+    i{
+        padding: 0px;
+        color: white;
+        font-size: 20px;
+        margin: 0px 10px 0px 0px;
+    }
+}
+
+
+
+@media only screen and (max-width: 990px) {
+    
+    .padd{
+        padding: 0px;
+
+        .filters{
+            height: auto;
+            margin: 5px 0px 10px;
+            display: flex;
+            flex-direction: column;
+    
+            a{
+                margin: 0px 0px 5px;
+                padding: 8px 20px;
+            }
+        }
+    }
+
+    
+
+    .container{
+        padding: 0px;
+
+        .loc{
+            padding: 0px;
+            margin: 0px 0px 15px 10px;
+            flex-wrap: wrap;
+
+            .loc_name{
+                width: 100%;
+                p{
+                    font-weight: 500;
+                    font-size: 14px;
+                }
+                .text{
+                    width: 100%;
+                    font-size: 10px;
+                }
+            }
+
+            .loc_hour{
+                width: 45%;
+                margin: 0px 0px 0px 10px;
+
+                i{
+                    font-size: 20px;
+                }
+
+                .text{
+                    width: 100%;
+                    font-size: 10px;
+                }
+            }
+
+            .loc_other{
+                width: 45%;
+                i{
+                    font-size: 20px;
+                }
+
+                .text{
+                    font-size: 10px;
+                }
+            }
+        }
+
+
+        .info{
+            padding: 20px 15px;
+        }
+    }
+  }
+
+  @media only screen and (max-width: 450px) {
+  
+
+    .padd{
+        padding: 0px;
+
+        .filters{
+            height: auto;
+            margin: 0px;
+            display: flex;
+            flex-direction: column;
+    
+            a{
+                height: 35px;
+                margin: 0px 0px 5px;
+                padding: 4px 15px;
+            }
+        }
+    }
+    .container{
+        padding: 0px;
+
+        .loc{
+            padding: 0px;
+            margin: 0px 0px 15px 10px;
+            flex-wrap: wrap;
+
+            .loc_name{
+                width: 100%;
+                p{
+                    font-weight: 500;
+                    font-size: 14px;
+                }
+                .text{
+                    width: 100%;
+                    font-size: 10px;
+                }
+            }
+
+            .loc_hour{
+                width: 45%;
+                margin: 0px 0px 0px 10px;
+
+                i{
+                    font-size: 20px;
+                }
+
+                .text{
+                    width: 100%;
+                    font-size: 10px;
+                }
+            }
+
+            .loc_other{
+                width: 45%;
+                i{
+                    font-size: 20px;
+                }
+
+                .text{
+                    font-size: 10px;
+                }
+            }
+        }
+
+
+        .info{
+            padding: 10px 5px;
+        }
+    }
+}

@@ -1,0 +1,259 @@
+h1 {
+  color: #ff6400;
+  font-size: 25px;
+  font-weight: bold;
+  margin: 10px 0px 25px;
+}
+
+.padd {
+  padding-left: 100px;
+}
+
+.filters {
+  width: auto;
+  margin: 10px 0 15px;
+  height: auto;
+}
+.filters .active {
+  border: 2px solid #FF6400;
+  color: #FF6400 !important;
+  position: relative;
+}
+.filters .active::after {
+  content: "";
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  background-color: #FFFFFF;
+  bottom: -23px;
+  background-image: url("../images/down_arrow.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  left: 42%;
+}
+.filters a {
+  height: 49px;
+  border-radius: 25px;
+  margin: 10px 5px 20px;
+  padding: 16px 40px;
+  border: 2px solid #969696;
+  text-decoration: none;
+  color: #A1A1A1;
+  font-weight: bold;
+  font-size: 14px;
+  cursor: pointer;
+}
+.filters a:hover {
+  color: #A1A1A1;
+}
+
+.loc {
+  width: 95%;
+  display: flex;
+  justify-content: space-between;
+  padding: 35px 65px;
+  border-radius: 10px;
+  color: #000000;
+  background-color: #FAFAFA;
+  transition: 0.3s;
+  margin-bottom: 20px;
+  margin-left: 60px;
+}
+.loc:hover {
+  background-color: #FF6400;
+}
+.loc:hover .loc_name p {
+  color: white;
+}
+.loc:hover .loc_name .text {
+  color: white;
+}
+.loc:hover .loc_hour {
+  margin-left: 20px;
+  color: white;
+  display: flex;
+}
+.loc:hover .loc_hour span i {
+  font-size: 35px;
+  margin-right: 5px;
+  margin-top: 5px;
+  color: white;
+}
+.loc:hover .loc_other {
+  margin-left: 20px;
+  color: white;
+  display: flex;
+}
+.loc:hover .loc_other span i {
+  font-size: 35px;
+  margin-right: 5px;
+  margin-top: 5px;
+  color: #ff6400;
+  color: white;
+}
+.loc .loc_name p {
+  font-size: 20px;
+  font-weight: 700;
+  margin: 0px;
+}
+.loc .loc_name .text {
+  font-size: 14px;
+}
+.loc .loc_hour {
+  margin-left: 20px;
+  display: flex;
+}
+.loc .loc_hour span i {
+  font-size: 35px;
+  margin-right: 5px;
+  margin-top: 5px;
+  color: #ff6400;
+}
+.loc .loc_other {
+  margin-left: 20px;
+  display: flex;
+}
+.loc .loc_other span i {
+  font-size: 35px;
+  margin-right: 5px;
+  margin-top: 5px;
+  color: #ff6400;
+}
+
+.info {
+  height: 65px;
+  padding: 25px 65px;
+  background-color: #FF6400;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: row;
+  margin-left: 60px;
+}
+.info p {
+  display: inline;
+  font-size: 14px;
+  color: white;
+  font-weight: 700;
+}
+.info i {
+  padding: 0px;
+  color: white;
+  font-size: 20px;
+  margin: 0px 10px 0px 0px;
+}
+
+@media only screen and (max-width: 990px) {
+  .padd {
+    padding: 0px;
+  }
+  .padd .filters {
+    height: auto;
+    margin: 5px 0px 10px;
+    display: flex;
+    flex-direction: column;
+  }
+  .padd .filters a {
+    margin: 0px 0px 5px;
+    padding: 8px 20px;
+  }
+  .container {
+    padding: 0px;
+  }
+  .container .loc {
+    padding: 0px;
+    margin: 0px 0px 15px 10px;
+    flex-wrap: wrap;
+  }
+  .container .loc .loc_name {
+    width: 100%;
+  }
+  .container .loc .loc_name p {
+    font-weight: 500;
+    font-size: 14px;
+  }
+  .container .loc .loc_name .text {
+    width: 100%;
+    font-size: 10px;
+  }
+  .container .loc .loc_hour {
+    width: 45%;
+    margin: 0px 0px 0px 10px;
+  }
+  .container .loc .loc_hour i {
+    font-size: 20px;
+  }
+  .container .loc .loc_hour .text {
+    width: 100%;
+    font-size: 10px;
+  }
+  .container .loc .loc_other {
+    width: 45%;
+  }
+  .container .loc .loc_other i {
+    font-size: 20px;
+  }
+  .container .loc .loc_other .text {
+    font-size: 10px;
+  }
+  .container .info {
+    padding: 20px 15px;
+  }
+}
+@media only screen and (max-width: 450px) {
+  .padd {
+    padding: 0px;
+  }
+  .padd .filters {
+    height: auto;
+    margin: 0px;
+    display: flex;
+    flex-direction: column;
+  }
+  .padd .filters a {
+    height: 35px;
+    margin: 0px 0px 5px;
+    padding: 4px 15px;
+  }
+  .container {
+    padding: 0px;
+  }
+  .container .loc {
+    padding: 0px;
+    margin: 0px 0px 15px 10px;
+    flex-wrap: wrap;
+  }
+  .container .loc .loc_name {
+    width: 100%;
+  }
+  .container .loc .loc_name p {
+    font-weight: 500;
+    font-size: 14px;
+  }
+  .container .loc .loc_name .text {
+    width: 100%;
+    font-size: 10px;
+  }
+  .container .loc .loc_hour {
+    width: 45%;
+    margin: 0px 0px 0px 10px;
+  }
+  .container .loc .loc_hour i {
+    font-size: 20px;
+  }
+  .container .loc .loc_hour .text {
+    width: 100%;
+    font-size: 10px;
+  }
+  .container .loc .loc_other {
+    width: 45%;
+  }
+  .container .loc .loc_other i {
+    font-size: 20px;
+  }
+  .container .loc .loc_other .text {
+    font-size: 10px;
+  }
+  .container .info {
+    padding: 10px 5px;
+  }
+}/*# sourceMappingURL=service_network.css.map */

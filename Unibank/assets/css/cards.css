@@ -1,0 +1,269 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.padding_card {
+  padding-left: 110px;
+}
+.padding_card h1 {
+  font-weight: bold;
+  color: #ff6400;
+}
+
+.mainbox {
+  border: 1px solid #FAFAFA;
+  border-radius: 10px;
+  background-color: #FAFAFA;
+  padding: 50px;
+}
+.mainbox .resp {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.mainbox .resp .text h2 {
+  width: auto;
+  font-size: 28px;
+  font-weight: bold;
+  color: #000;
+  margin-left: 20px;
+}
+.mainbox .resp .text span {
+  font-weight: 350;
+  font-size: 15px;
+  margin-left: 20px;
+}
+.mainbox .resp a {
+  display: block;
+  padding: 14px 30px;
+  font-size: 14px;
+  justify-self: flex-end;
+  width: auto;
+  height: auto;
+  max-height: 50px;
+  color: #fff;
+  border: 1px solid #ff6400;
+  background-color: #ff6400;
+  border-radius: 25px;
+  font-weight: bold;
+}
+.mainbox .resp .ic_txt {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.mainbox .resp .ic_txt p {
+  font-weight: 600;
+  font-size: 20px;
+  margin: 0px;
+}
+.mainbox .resp .ic_txt i {
+  margin: 20px;
+  font-size: 30px;
+  color: #ff6b00;
+}
+
+.cardimg {
+  width: 315px;
+  height: 200px;
+  box-shadow: -15px 15px 30px 0 rgba(0, 0, 0, 0.24);
+  border-radius: 15px;
+}
+
+.transparent {
+  background-color: transparent;
+}
+
+.padding_debetcards .debet {
+  background-color: #FAFAFA;
+  margin-left: 75px;
+  padding: 45px 50px;
+  border-radius: 10px;
+  height: auto;
+  margin-top: 40px;
+}
+.padding_debetcards .debet .text {
+  margin-top: 40px;
+}
+.padding_debetcards .debet .text h2 {
+  font-size: 25px;
+  font-weight: bold;
+  margin: 0px 0px 10px;
+}
+.padding_debetcards .debet .text a {
+  display: inline-block;
+  padding: 14px 30px;
+  font-size: 14px;
+  line-height: 14px;
+  background: #ff6400;
+  border-radius: 25px;
+  box-shadow: 0 10px 10px -10px rgba(255, 106, 0, 0.51);
+  color: #fff;
+  font-weight: 600;
+  margin-top: 50px;
+}
+.padding_debetcards .debet .text .ucardgift {
+  border: 1px solid rgba(149, 147, 147, 0.1);
+  color: #737272;
+  background-color: #d2cfcf;
+}
+
+.debetcards h1, .othercards h1 {
+  margin-left: 75px;
+  font-weight: bold;
+  color: #ff6400;
+}
+
+@media only screen and (max-width: 990px) and (min-width: 570px) {
+  .padding_card {
+    padding: 0px;
+    padding-left: 20px !important;
+  }
+  .container {
+    width: 100%;
+  }
+  .mainbox {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .mainbox .cardimg {
+    width: 100%;
+    height: auto;
+  }
+  .mainbox .resp {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .mainbox .resp .row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .mainbox .resp .text h2 {
+    width: 100% !important;
+    text-align: center;
+    margin: 10px 0px 0px 0px;
+  }
+  .mainbox .resp .text span {
+    width: 100% !important;
+    text-align: center;
+  }
+  .mainbox .resp a {
+    text-align: center;
+    margin: 10px 0px;
+    width: 100% !important;
+  }
+  .debetcards {
+    padding: 0px;
+    padding: 0px 20px;
+  }
+  .debetcards .cardimg {
+    width: 100%;
+    height: auto;
+  }
+  .debetcards h1 {
+    margin: 20px 0px 20px 10px;
+  }
+  .debetcards .debet {
+    margin: 0px;
+    margin-bottom: 20px;
+  }
+  .othercards {
+    padding: 0px;
+    padding: 0px 20px;
+  }
+  .othercards .cardimg {
+    width: 100%;
+    height: auto;
+  }
+  .othercards h1 {
+    margin: 20px 0px 20px 10px;
+  }
+  .othercards .debet {
+    margin: 0px;
+    margin-bottom: 20px;
+  }
+}
+@media only screen and (max-width: 570px) {
+  .padding_card {
+    padding: 0px;
+    padding-left: 20px !important;
+    margin: 0px !important;
+  }
+  .container {
+    width: 100%;
+  }
+  .mainbox {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .mainbox .cardimg {
+    width: 100%;
+    height: auto;
+  }
+  .mainbox .resp {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .mainbox .resp .row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .mainbox .resp .text h2 {
+    width: 100% !important;
+    text-align: center;
+    margin: 10px 0px 0px 0px;
+  }
+  .mainbox .resp .text span {
+    width: 100% !important;
+    text-align: center;
+  }
+  .mainbox .resp a {
+    text-align: center;
+    margin: 10px 0px;
+    width: 100% !important;
+  }
+  .debetcards {
+    padding: 0px;
+    padding: 0px 20px;
+    margin: 0px !important;
+  }
+  .debetcards .cardimg {
+    width: 100%;
+    height: auto;
+  }
+  .debetcards h1 {
+    margin: 20px 0px 20px 10px;
+  }
+  .debetcards .debet {
+    margin: 0px;
+    margin-bottom: 20px;
+  }
+  .othercards {
+    padding: 0px;
+    padding: 0px 20px;
+    margin: 0px !important;
+  }
+  .othercards .cardimg {
+    width: 100%;
+    height: auto;
+  }
+  .othercards h1 {
+    margin: 20px 0px 20px 10px;
+  }
+  .othercards .debet {
+    margin: 0px;
+    margin-bottom: 20px;
+  }
+}/*# sourceMappingURL=cards.css.map */

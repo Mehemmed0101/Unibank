@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>İnsan Resursları</title>
+    <link rel="icon" href="https://unibank.az/assets/images/logonew-orange1.png">
+    <link rel="stylesheet" href="./assets/css/bootstrap.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/resource.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<body>
+    <div id="mini-chat">
+        <svg id="chat-icon-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800"><path d="M400 26.2c-193.3 0-350 156.7-350 350 0 136.2 77.9 254.3 191.5 312.1 15.4 8.1 31.4 15.1 48.1 20.8l-16.5 63.5c-2 7.8 5.4 14.7 13 12.1l229.8-77.6c14.6-5.3 28.8-11.6 42.4-18.7C672 630.6 750 512.5 750 376.2c0-193.3-156.7-350-350-350zm211.1 510.7c-10.8 26.5-41.9 77.2-121.5 77.2-79.9 0-110.9-51-121.6-77.4-2.8-6.8 5-13.4 13.8-11.8 76.2 13.7 147.7 13 215.3.3 8.9-1.8 16.8 4.8 14 11.7z" fill-rule="evenodd" clip-rule="evenodd"></path></svg>
+    </div>
+    <div id="chat" class="active">
+        <header>
+            <div class="d-flex justify-content-between">
+                <span>Let’s chat? - We're online</span>
+                <div>
+                    <i class="fas fa-bars"></i>
+                    <span class="close-chat"> 
+                        <i class="fas fa-times"></i>
+                    </span>
+                </div>
+            </div>
+            <div class="p-4 text-center">
+                <p>Hi 👋 <br> 
+                     Enter a message below, to start chatting</p>
+            </div>
+        </header>
+        <main>
+            <div class="message support">
+                <p>Salam xoş gəldiz!</p>
+                <p class="time">15:40</p>   
+            </div>
+            <div class="message user">
+                <p>Salam xoş gördük!</p>
+                <p class="time">15:40</p>
+            </div>
+        </main>
+        <footer>
+            <input id="chat-text" class="form-control" type="text" placeholder="write here...">
+        </footer>
+    </div>
+
+    <header>
+        <div class="header">
+
+            <div class="container">
+                <div class="alltopheader">
+
+                    <div class="topheaderleft">
+                        <div class="logo">
+                            <a href="index.html"><img src="https://unibank.az/assets/images/logonew-orange1.png"
+                                    alt=""></a>
+                        </div>
+                        <nav>
+                            <a href="/service_network.html">Xidmət şəbəkəsi</a>
+                            <a href="">Bank haqqında</a>
+                            <a href="">Keşbek</a>
+                            <a href="">Tariflər</a>
+                            <a href="">İnsan Resursları</a>
+                            <a href="">Bankla əlaqə və təkliflər</a>
+                        </nav>
+                    </div>
+                    <div class="topheaderright">
+                        <a href="">Fərdi</a>
+                        <a href="">Biznes</a>
+                        <i class="mode fa-solid fa-sun"></i>
+                        <span class="language">ENG</span>
+                        <span class="language">RUS</span>
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container media_header">
+
+
+            <div class="bottomheader">
+                <div class="bottomleft">
+                    <a href="/cards.html">Kartlar</a>
+                    <a href="">Kreditlər</a>
+                    <a href="">Əmanətlər</a>
+                    <a href="">Köçürmələr</a>
+                    <a href="">Rəqəmsal bankçılıq</a>
+                    <a href="">Əlavə xidmətlər</a>
+                </div>
+                <div class="bottomright">
+                    <a href=""><i class="fa-solid fa-phone"></i>117</a>
+                    <a href="/signin.html"><i class="fa-solid fa-arrow-right"></i>İnternet Bankçılıq</a>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="header_for_phone">
+            <a class="burger_menu" onclick="displayMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </a>
+            <div class="logo">
+                <img src="./assets/images/media_logo.png" alt="">
+            </div>
+            <div class="call">
+                <i class="fa-solid fa-phone"></i>
+                <span>117</span>
+            </div>
+        </div>
+
+        <div class="menubar_responsive" id="rspMenuBar">
+            <div class="container-fluid">
+                <div class="self_or_business">
+                    <a href="" class="self">Fərdi</a>
+                    <a href="">Biznes</a>
+                </div>
+                <div class="first_section">
+                    <a href="">Kartlar</a>
+                    <a href="">Kreditler</a>
+                    <a href="">Əmanətlər</a>
+                    <a href="">Köçürmələr</a>
+                    <a href="">Rəqəmsal Bankçılıq</a>
+                    <a href="">Əlavə Xidmətlər</a>
+                    <a href="">Rəqəmsal Bankçılıq</a>
+                </div>
+                <div class="second_section">
+                    <a href="">F.A.Q.</a>
+                    <a href="">Xidmət Şəbəkəsi</a>
+                    <a href="">Bank haqqında</a>
+                    <a href="">Keşbek</a>
+                    <a href="">Tariflər</a>
+                    <a href="">İnsan Resursları</a>
+                    <a href="">Bankla əlaqə və təkliflər</a>
+                </div>
+
+                <div class="topheaderright" style="display: flex; justify-content: center;">
+                    <i class="mode fa-solid fa-sun"></i>
+                    <span class="language">ENG</span>
+                    <span class="language">RUS</span>
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+
+        <div class="container padd">
+            <h1>İnsan resursları</h1>
+            <div class="filters col-lg-12">
+                <a class="active"> 
+                    Ümumi məlumat </a>
+                <a>
+                    Vakansiyalar </a>
+                <a>
+                    Unibankda çalışmaq </a>
+                <a>
+                    İşə qəbul prosesi </a>
+                <a>
+                    Təlim və İnkişaf </a>
+            </div>
+            <div class="col-lg-12">
+                <div class="video">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/ricGtmUDcLU"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
+                </div>
+
+
+
+
+                <div class="row padd2">
+                    <div class="col-lg-3 col-md-12 boxform">
+                        <div class="icons">
+                            <i class="fa-regular fa-file-lines"></i>
+                        </div>
+                        <div class="text">
+                            <h1>
+                                Vakansiyalar </h1>
+                            <span>
+                                Unibankda 50-dən çox karyera istiqaməti mövcuddur. Hazırda mövcud vakansiyalar barədə
+                                ətraflı məlumat əldə edin. </span>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-12 boxform">
+                        <div class="icons">
+                            <i class="fa-solid fa-users-line"></i>
+                        </div>
+                        <div class="text">
+                            <h1>
+                                Unibankda çalışmaq </h1>
+                            <span>
+                                Ölkənin ən nüfuzlu şirkətlərindən birində çalışmaq, öz karyera arzularını reallaşdırmaq
+                                istəyirsənsə - Unibank məhz sənin bankındır! Gələcək inkişafını Unibankla başla! </span>
+
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-12 boxform">
+                        <div class="icons">
+                            <i class="fa-solid fa-file-pen"></i>
+                        </div>
+                        <div class="text">
+                            <h1>
+                                İşə qəbul prosesi </h1>
+                            <span>
+                                Müraciət etdiyiniz vakansiyadan asılı olaraq işə qəbul prosesimiz fərqlənə bilər. Test
+                                mərhələsində sizi nələr gözlədiyini və müsahibələrdə hansı məqamlara diqqət yetirməli
+                                olduğunuzu öyrənin. </span>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-12 boxform">
+                        <div class="icons">
+                            <i class="fa-solid fa-book-open"></i>
+                        </div>
+                        <div class="text">
+                            <h1>
+                                Təlim və İnkişaf </h1>
+                            <span>
+                                Karyera və iş həyatınız boyu Təlim və İnkişaf Mərkəzi əsas dostunuz və yol yoldaşınız
+                                olacaq! </span>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-12 boxform">
+                        <div class="icons">
+                            <i class="fa-solid fa-graduation-cap"></i>
+                        </div>
+                        <div class="text">
+                            <h1>
+                                Təcrübə proqramları </h1>
+                            <span>
+                                Təcrübə proqramları müxtəlif istiqamətlərdə və müxtəlif müddətlərdə olur. Təcrübə
+                                müddəti maksimal olaraq 3 ay ərzində keçirilir. </span>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-12 boxform">
+                        <div class="icons">
+                            <i class="fa-solid fa-arrow-right-arrow-left"></i>
+                        </div>
+                        <div class="text">
+                            <h1>
+                                İstiqamətlər </h1>
+                            <span>
+                                Karyeranızı məhz bank sektorunda qurmaq istəyir, öz gücünüzə və potensialınıza
+                                inanırsınızsa, Unibank Sizi öz karyera seçiminizi etməyə dəvət edir. </span>
+                        </div>
+                    </div>
+                    <div class="col-lg-5 col-md-12 personnews">
+                        <div class="person">
+                            <div class="image">
+                                <img src="assets/images/o_1d0juoufe1dl214ssvb01ijbvjua.jpgkisi1.jpg" alt="">
+                            </div>
+
+                            <h3>Eldar Qəribov</h3>
+                            <span>Müşahidə Şurasının sədri</span>
+                            <p>Unibankda gənc mütəxəssislərin özlərini reallaşdırmaları, peşə vərdişlərini,
+                                ixtisaslarını artırmaları üçün hər cür şərait yaradılıb. İllər boyu Unibank minlərlə
+                                əməkdaşın təkcə iş yeri deyil, həm də onların Məktəbi və İnkişaf Mərkəzi olub. Məhz biz
+                                səhmdarlar üçün şirkətin əsas dəyəri onun İnsan Kapitalı, Komandasıdır.</p>
+                        </div>
+
+                    </div>
+                    <div class="col-lg-5 col-md-12 personnews">
+                        <div class="person">
+                            <div class="image">
+                                <img src="assets/images/o_1d0juqc4l1vakbauvj3k1a3r0a.jpgkisi2.jpg" alt="">
+                            </div>
+
+                            <h3>Faiq Hüseynov</h3>
+                            <span>Müşahidə Şurası sədrinin müavini</span>
+                            <p>Unibank həmişə gənc mütəxəssislər üçün uğurlu karyera ünvanı, inkişaf məkanı olub.
+                                Fəaliyyət göstərdiyi 30 ildən artıq dövrdə Unibank məktəbində yetişmiş minlərlə kadr, bu
+                                gün bank sektorunun uğurlu, bacarıqlı mütəxəssisləridir. Bankın işçi heyətinin davamlı
+                                inkişafı, komanda ruhunun gücləndirilməsi rəhbərlik üçün hər zaman prioritet
+                                vəzifələrdən biridir.</p>
+
+                        </div>
+                    </div>
+                    <div class="aboutus">
+                        <h1>Haqqımızda</h1>
+                        <span>Unibank yarandığı ilk gündən etibarən insan resurslarının inkişafını əsas prioritetlərdən
+                            biri kimi qəbul etmişdir. Ümumilikdə bank öz əməkdaşlarına resurs deyil, kapital kimi
+                            baxmasına üstünlük verir. Məhz bizim komandamız bizim əsas kapitalımız və dəyərimizdir.
+                            İllər boyu formalaşan bu dəyər Unibank dəfələrlə ölkənin bank bazarıda müxtəlif
+                            istiqamətlərdə birincilər sırasına gətirmişdir. Əsas qazancımız isə bir daha insan
+                            kapitalımızın verdiyi dəyər olub.
+
+                            Unibank insan kapitalına dair öz strategiyasını əməkdaşın ilk günündən, habelə təcrübə
+                            proqramından başlayaraq start verərək, onun sonraki karyera inkişafını planlayır. Müxtəlif
+                            vəzifələr üzrə karyera inkişafı planlaşdırılması, o cümlədən əməkdaşların şəxsi və
+                            profesional kompetensiyaların artırılması istiqamətində təlim və inkişafı, o cümlədən
+                            onların liderlik və idarə etmə kimi bacarıqlarının inkişafıda əsas prioritetlərimizdən
+                            biridir. Daxili talantların idarə edilməsi və tanınması, onların bankdaxili rotasiyalar
+                            vasitəsilə inkişaf etdirilməsidə Unibankın insan kapitalının inkişafı üzrə əsas
+                            məqamlarındandır. İnsan Kapitalı Bankın 2017-2019cu illəri əks etdirən Strateji Planımızda
+                            belə əsas strateji hədəflərindən biri kimi səhmdarlar tərəfindən qəbul edilmişdir.</span>
+
+                    </div>
+                </div>
+                <div class="boxes">
+                    <div class="boxes1">
+
+                        <i class="fa-regular fa-circle-check"></i>
+                        <p>Biliyinizi genişləndirmək üçün hədsiz imkanlar</p>
+
+
+                    </div>
+                    <div class="boxes1">
+
+                        <i class="fa-regular fa-circle-check"></i>
+                        <p>
+                            Güclü komandanın bir parçası olmaq
+                        </p>
+
+
+                    </div>
+                    <div class="boxes1">
+                        <i class="fa-regular fa-circle-check"></i>
+                        <p>
+                            Bank Məktəbində çalışmaq imkanı
+                        </p>
+
+
+                    </div>
+                    <div class="boxes1">
+
+                        <i class="fa-regular fa-circle-check"></i>
+                        <p>
+                            Ölkənin aparıcı şirkətlərindən birində uğur yolunuzun binövrəsini qurmaq
+                        </p>
+
+                    </div>
+
+                </div>
+                <div class="values">
+
+                    <div class="valuehead">
+                        <h2>Dəyərlərimiz</h2>
+                    </div>
+                    <div class="row valuebottom">
+                        <div class="col-lg-3">
+                            
+                                <h3>Etibarlılıq</h3>
+                               <span>
+                                   Ölkəmiz, müştərilərimiz, partnyorlarımız, işçilərimiz üçün daim etibarlı bank olmaq bizim dəyərlərimizdən biridir.
+                                </span>
+                            
+    
+                        </div>
+                        <div class="col-lg-3">
+                            
+                                <h3>İnnovativlik</h3>
+                                <span>Müştərilərimizin vaxtına qənaət edərək, onlara innovativ məhsul və xidmətləri təklif etməklə, dəyərlərinə dəyər qatmaq əsas prioritetlərimizdəndir. Biz inkişafın nəbzini tuturuq!</span>
+                            
+    
+                        </div>
+                        <div class="col-lg-3">
+                            
+                                <h3>Bank Məktəbi</h3>
+                                <span>30 ildən artıq fəaliyyətimiz dövründə bank sektoruna minlərlə peşəkar bank işçisi verməyimiz, insan kapitalını hər zaman ön planda tutmağımızla qürur duyuruq!</span>
+                            
+    
+                        </div>
+                        <div class="col-lg-3">
+                            
+                                <h3>Komanda</h3>
+                                <span>Hədəflərimizə doğru daim bir komanda ruhunda çalışmaq, səmimi, hər kəs üçün faydalı, ailə dəyərlərinə malik komanda olmaqda davam etmək, əsas vəzifələrimizdəndir.Biz komandamızın qələbəsinə inanırıq!</span>
+                            
+    
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+                       
+
+
+
+
+
+
+
+
+
+
+    </main>
+    <footer>
+        <div class="container3">
+            <div class="all-footer">
+
+                <div class="footer-menu">
+                    <div class="menu-box">
+                        <div class="m-boxes">
+                            <a class="first-child" href="">Kartlar</a>
+                            <a href="">Kartlar</a>
+                            <a href="">Debet kartlar</a>
+                            <a href="">Digər</a>
+                        </div>
+                    </div>
+                    <div class="menu-box">
+                        <div class="m-boxes">
+
+                            <a class="first-child" href="">Kreditlər</a>
+                            <a href="">Nağd</a>
+                            <a href="">Mikro</a>
+                            <a href="">İpoteka</a>
+                        </div>
+
+                    </div>
+                    <div class="menu-box">
+                        <div class="m-boxes">
+
+                            <a class="first-child" href="">Əmanətlər</a>
+                            <a href="">Müddətli</a>
+                            <a href="">Proqressiv</a>
+                            <a href="">Yığım</a>
+                            <a href="">Faizlər əvvəlcədən</a>
+                            <a href="">Topla</a>
+                        </div>
+                    </div>
+                    <div class="menu-box">
+                        <div class="m-boxes">
+
+                            <a class="first-child" href="">Köçürmələr</a>
+                            <a href="">Ölkəxarici</a>
+                            <a href="">Ölkədaxili</a>
+                        </div>
+                    </div>
+                    <div class="menu-box">
+                        <div class="m-boxes">
+
+                            <a class="first-child" href="">Rəqəmsal bankçılıq</a>
+                            <a href="">UBusiness</a>
+                            <a href="">İnternet bankçılıq</a>
+                            <a href="">Hesabın onlayn açılması</a>
+                            <a href="">Biznes Kartın onlayn sifarişi</a>
+                            <a href="">Onlayn əməkhaqqı layihəsi</a>
+                        </div>
+                    </div>
+                    <div class="menu-box">
+                        <div class="m-boxes">
+
+                            <a class="first-child" href="">Əlavə xidmətlər</a>
+                            <a href="">Hesablaşma-kassa xidməti</a>
+                            <a href="">POS terminal / Smart kassa</a>
+                            <a href="">Depozit qutuları</a>
+                            <a href="">Onlayn ticarət (eCommerce)</a>
+                        </div>
+                    </div>
+                    <div class="menu-box">
+                        <div class="m-boxes">
+
+                            <a class="first-child" href="">Bank haqqında</a>
+                            <a href="">Rəhbərlik</a>
+                            <a href="">Müxbir hesablar</a>
+                            <a href="">Təklif və Şikayətlər</a>
+                            <a href="">İnsan resursları</a>
+                            <a href="">Hesabatlar</a>
+                            <a href="">Digər sənədlər</a>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="bottom-footer">
+                    <div class="social-menu">
+                        <a href=""><i class="mob fa-brands fa-apple"></i></a>
+                        <a href=""><i class="mob fa-brands fa-android"></i></a>
+                        <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href=""><i class="fa-brands fa-twitter"></i></a>
+                        <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                        <a href=""><i class="fa-brands fa-youtube"></i></a>
+                        <a href=""><i class="fa-brands fa-square-instagram"></i></a>
+                        <a href=""><i class="fa-brands fa-telegram"></i></a>
+                    </div>
+                    <hr>
+                    <div class="footer-copyright">
+                        <div class="copyright-bar">
+                            <div class="copyright-head">
+                                <span>© Unibank - Sənin Bankın</span>
+                            </div>
+                            <div class="copyright-text">
+                                Unibank Azərbaycan Respublikası Mərkəzi Bankının 73 saylı 14 dekabr 2010-cu il tarixli
+                                lisenziyası əsasında fəaliyyət göstərir.
+                                <br>
+                                Bütün hüquqlar qorunur.
+                            </div>
+                        </div>
+                        <div class="sponsor-company">
+                            <div class="image">
+
+                                <img class="img1" src="assets/images/adif.webp" alt="">
+                                <img class="img2" src="assets/images/infobank.webp" alt="">
+                                <img class="img3" src="assets/images/msp.webp" alt="">
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="./assets/js/burger_menu.js"></script>
+    <script src="./assets/js/filetrs.js"></script>
+    <script src="./assets/js/calc_az_usa.js"></script>
+    <script src="./assets/js/mini_chat.js"></script>
+    <script src="./assets/js/custom.js"></script>
+</body>

@@ -1,0 +1,87 @@
+.alert {
+  font-size: 16px;
+  font-family: regular;
+}
+
+.table {
+  padding-bottom: 3rem;
+}
+.table .thead th {
+  text-align: center;
+  font-size: 16px;
+  font-family: regular;
+}
+.table .tbody {
+  height: 205px;
+  background-color: #FAFAFA;
+}
+.table .tbody th {
+  vertical-align: middle;
+  text-align: center;
+  font-size: 20px;
+}
+.table .tbody td {
+  vertical-align: middle;
+  text-align: center;
+  font-size: 20px;
+}
+.table .tbody td input {
+  padding: 10px;
+  width: 25%;
+  font-size: 16px !important;
+  border-radius: 10px;
+  border: 1px solid #000000;
+}
+.table .tbody td button {
+  padding: 10px 20px;
+  border-radius: 25px;
+  background-color: red;
+  color: #FFFFFF;
+  font-size: 16px;
+  font-family: bold;
+}
+.table .tbody .img {
+  width: 25%;
+  padding: 2rem;
+}
+.table .tbody .img img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.foralert {
+  width: 100% !important;
+  height: 300px !important;
+  background-color: transparent !important;
+  display: flex;
+  align-items: center;
+}
+
+@media (max-width: 576px) {
+  .alert {
+    font-size: 14px;
+    width: 50% !important;
+  }
+  .table {
+    padding-top: 2rem;
+  }
+  .table .thead th {
+    font-size: 14px;
+  }
+  .table .tbody th {
+    font-size: 14px;
+  }
+  .table .tbody td {
+    font-size: 14px;
+  }
+  .table .tbody td input {
+    padding: 8px 20px;
+  }
+  .table .tbody td button {
+    padding: 5px 10px;
+    font-size: 14px;
+  }
+  .table .tbody .img {
+    width: 40%;
+  }
+}/*# sourceMappingURL=basket.css.map */
